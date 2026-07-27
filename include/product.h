@@ -27,7 +27,7 @@ public:
             const std::string& category,
             double price,
             int quantity,
-            std::string& supplier);
+            const std::string& supplier);
 
 
     void display() const;

@@ -11,4 +11,5 @@ add_executable(
     InventoryManagementSystem
     main.cpp
     src/product.cpp
+    src/I_tory.cpp
 )

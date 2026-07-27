@@ -17,7 +17,7 @@ Product::Product(
     const std::string& category,
     double price,
     int quantity,
-    std::string& supplier):
+    const std::string& supplier):
     id(id),
     name(name),
     category(category),
