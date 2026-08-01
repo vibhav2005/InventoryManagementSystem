@@ -4,7 +4,7 @@
 void Inventory::AddProduct(const Product& product){
     products.push_back(product);
     std::cout<<" product added successfully";
-
+    
 }
 
 void Inventory::DisplayProducts() const
@@ -35,7 +35,7 @@ Product* Inventory::SearchProduct(int id)
     return nullptr;
 }
 
-bool Inventory::DleteProduct(int id)
+bool Inventory::DeleteProduct(int id)
 {
     for(auto it = products.begin(); it != products.end(); ++it)
     {

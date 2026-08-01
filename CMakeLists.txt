@@ -12,4 +12,5 @@ add_executable(
     main.cpp
     src/product.cpp
     src/I_tory.cpp
+    src/menu.cpp
 )

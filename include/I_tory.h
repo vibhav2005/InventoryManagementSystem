@@ -14,7 +14,7 @@ class Inventory{
         void AddProduct(const Product& product);
         void DisplayProducts() const;
         Product* SearchProduct(int id);
-        bool DleteProduct(int id);
+        bool DeleteProduct(int id);
 
 };
 
