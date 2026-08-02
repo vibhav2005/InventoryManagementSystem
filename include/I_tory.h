@@ -16,6 +16,7 @@ class Inventory{
         Product* SearchProduct(int id);
         bool DeleteProduct(int id);
 
+        const std::vector<Product>& GetProducts() const;
 };
 
 #endif 

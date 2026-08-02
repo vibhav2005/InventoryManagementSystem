@@ -32,6 +32,12 @@ public:
 
     void display() const;
     int getId() const;
+    std::string getName()const;
+    std::string getCategory()const;
+    double getPrice()const;
+    int getQuantity()const;
+    std::string getSupplier()const;
+
 
 
 };

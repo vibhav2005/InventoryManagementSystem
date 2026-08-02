@@ -1,6 +1,4 @@
 #include "menu.h"
-#include <iostream>
-#include <string>
 
 void Menu::addProduct(){
         int id;
@@ -55,7 +53,9 @@ void Menu::displayMenu()
     std::cout << "2. Display Products\n";
     std::cout << "3. Search Product\n";
     std::cout << "4. Delete Product\n";
-    std::cout << "5. Exit\n";
+    std::cout << "5. Save Inventory\n";
+    std::cout << "6. Load Inventory\n";
+    std::cout << "7. Exit\n";
 
     std::cout << "\nEnter Choice: ";
 }
@@ -106,10 +106,13 @@ void Menu::displayProducts()
 void Menu::run()
 {
     int choice;
+    file.LoadItory(inventory);
 
     while(true)
     {
         displayMenu();
+        
+
 
         std::cin >> choice;
 
@@ -130,8 +133,18 @@ void Menu::run()
             case 4:
                 deleteProduct();
                 break;
-
+            
             case 5:
+                file.SaveItory(inventory);   // Save once before exiting
+                std::cout << "Thank you for using Inventory Management System.\n";
+                break;
+
+            case 6:
+                file.LoadItory(inventory);   // load once before exiting
+                std::cout << "loaded last state\n";
+                break;
+
+            case 7:
                 std::cout << "Thank you for using Inventory Management System.\n";
                 return;
 

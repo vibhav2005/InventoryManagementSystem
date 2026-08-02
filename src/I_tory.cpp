@@ -49,3 +49,8 @@ bool Inventory::DeleteProduct(int id)
 
     return false;
 }
+
+const std::vector<Product>& Inventory::GetProducts() const{
+    return products;
+
+}

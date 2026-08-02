@@ -42,3 +42,24 @@ int Product::getId() const{
     return id;
 }
 
+std::string Product::getName() const{
+    return name;
+}
+
+std::string Product::getCategory() const{
+    return category;
+}
+
+double Product::getPrice() const{
+    return price;
+}
+
+int Product::getQuantity() const{
+    return quantity;
+}
+
+std::string Product::getSupplier() const{
+    return supplier;
+}
+
+
